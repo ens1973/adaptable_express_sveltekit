@@ -1,28 +1,28 @@
 {
-  "name": "express-prisma-mongo-starter",
-  "version": "0.0.0",
-  "private": true,
+	"name": "sveltekit-express-starter",
+	"version": "0.0.1",
+	"private": true,
   "license": "MIT",
-  "scripts": {
-    "dev": "prisma db push && nodemon ./src/index",
-    "start": "prisma db push && node ./src/index",
+	"scripts": {
+		"dev": "vite dev --host=0.0.0.0",
+		"build": "vite build",
+		"preview": "vite preview",
+		"lint": "prettier --plugin-search-dir . --check .",
+		"format": "prettier --plugin-search-dir . --write .",
     "mongo-start": "docker run -d -p 27017-27019:27017-27019 --name mongo-dev adaptable/mongo-replica-set",
     "mongo-stop": "docker rm -f mongo-dev"
-  },
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-node": "next",
+		"@sveltejs/kit": "next",
+		"prettier": "^2.6.2",
+		"prettier-plugin-svelte": "^2.7.0",
+		"svelte": "^3.44.0",
+		"vite": "^3.1.0"
+	},
   "dependencies": {
-    "@prisma/client": "^3.14.0",
-    "cookie-parser": "~1.4.4",
-    "debug": "~2.6.9",
     "dotenv": "^16.0.1",
-    "express": "~4.16.1",
-    "morgan": "~1.9.1",
-    "prisma": "^3.14.0",
-    "sanitize-html": "^2.7.0"
+    "express": "~4.16.1"
   },
-  "devDependencies": {
-    "nodemon": "^2.0.16"
-  },
-  "nodemonConfig": {
-    "ext": "js,mjs,json,css,html"
-  }
+	"type": "module"
 }
