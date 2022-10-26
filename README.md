@@ -1,5 +1,4 @@
 # Adaptable.io Sveltekit starter app
 
-With [tailwincss](https://tailwindcss.com/) + [flowbite component](https://flowbite-svelte.com/).
+With [Tailwincss](https://tailwindcss.com/) + [Flowbite](https://flowbite-svelte.com/) + [Fontsource](https://fontsource.org/).
 
-Note: Your `build script` must be `build` like `package.json` file.
