@@ -7,5 +7,4 @@ node_modules
 .env.*
 !.env.example
 
-Dockerfile
 docker-compose.yml
